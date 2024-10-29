@@ -10,7 +10,7 @@
   <body>
     <div class="sidebar">
       <div class="dropdown">
-        <!-- Primera sección: Tareas -->
+        <!-- Sección: Tareas -->
         <div class="dropdown-section">
           <div class="dropdown-header" onclick="toggleDropdown(this)">
             Tareas
@@ -41,10 +41,19 @@
               <span class="method-badge delete">DELETE</span>
               Eliminar tarea
             </div>
+            <!-- Nuevo elemento de menú para Login/Registro -->
+            <div
+              class="menu-item"
+              data-method="auth"
+              data-file="./REGISTER/LOGIN.html"
+            >
+              <span class="method-badge auth">AUTH</span>
+              Login/Registro
+            </div>
           </div>
         </div>
 
-        <!-- Segunda sección: Modelos -->
+        <!-- Resto del contenido, como Modelos, Repositorio e Integrantes -->
         <div class="dropdown-section">
           <div class="dropdown-header" onclick="toggleDropdown(this)">
             Modelos
@@ -71,27 +80,26 @@
         </div>
 
         <div class="dropdown-section">
-            <div class="dropdown-header" onclick="toggleDropdown(this)">
-                Repositorio
-                <span class="arrow">▼</span>
-              </div>
-            <div class="dropdown-content active">
-              <div class="menu-item" data-method="modelTask" data-file="./REPOSITORIO/REPOSITORIO.html">
-                <span class="method-badge repo">R</span>
-                Repositorio
-              </div>
+          <div class="dropdown-header" onclick="toggleDropdown(this)">
+            Repositorio
+            <span class="arrow">▼</span>
+          </div>
+          <div class="dropdown-content active">
+            <div class="menu-item" data-method="modelTask" data-file="./REPOSITORIO/REPOSITORIO.html">
+              <span class="method-badge repo">R</span>
+              Repositorio
             </div>
           </div>
+        </div>
 
-        
-        <!-- Integrantes -->
+        <!-- Sección de integrantes -->
         <div class="team-members">
           <div>Integrantes:</div>
           <ul>
             <li>- Alvarez Duarte Jose Alfredo </li>
             <li>- Ibañez Parra Armando Jair</li>
             <li>- Cabral Machuca Alejandro Aaron</li>
-            <li>- Frias Bogarin Rodolfo</li>
+            <li>- Frias Bogarin Rodolfo</li>
           </ul>
         </div>
       </div>
